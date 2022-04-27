@@ -13,6 +13,32 @@
     }
 
   }
+  .heaimg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 30px;
+  }
+  .auricular{
+      width: 28%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 100%;
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+
+  }
+  .tecnologia{
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+  .ondas{
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
 
   .music-images {
     display: flex;
@@ -24,6 +50,9 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media (max-width: 500px) {
+        width: 100%;
+      }
     }
   }
 
@@ -44,10 +73,19 @@
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    @media (max-width: 500px) {
+      flex-direction: column-reverse;
+      padding: 15px;
+      width: 100%;
+
+    }
 
     .actual-text {
       width: 50%;
+      @media (max-width: 500px) {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +96,23 @@
       }
 
       .btn {
+        .btn1();
+      }
+
+      #check{
+        display: none;
+      }
+      #check:checked ~ #registro{
+        margin-left: 0;
       }
     }
 
     .actual-img {
       width: 46%;
       margin-left: 4%;
+      @media (max-width: 500px) {
+        width: 100%;
+      }
 
       img {
         width: 100%;
@@ -72,4 +121,17 @@
       }
     }
   }
+}
+#registro{
+  background-color: #1D2537;
+  color: white;
+  padding: 10px;
+  margin-left: -70%;
+  height: 260px;
+  width: 200px;
+  position: absolute;
+  left: 200px;
+  top: 900px;
+  border: 1px solid black;
+  border-radius: 10px;
 }

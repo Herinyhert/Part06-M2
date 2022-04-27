@@ -1,13 +1,12 @@
-<!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Música 8D</title>
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -15,13 +14,26 @@
 </head>
 
 <body>
+  <!-- Código del nav acá -->
 
- <!-- Código del nav acá -->
+  <nav id="nnav">
+    <h1> <center>Musica 8D</center></h1>
+    <ul class="menu">
+      <li class="nav">Inicio</li>
+      <li class="nav">Sobre Nosotros</li>
+      <li class="nav">Contacto</li>
+      <li class="nav">Blog</li>
+      <li class="nav">Registrarse</li>
+    </ul>
+  </nav>
 
+
+  
   <div class="container home">
-
+    
     <header class="intro">
-       <!-- Código de header img acá -->
+      <!-- Código de header img acá -->
+      <img src="./img/main-header.png"class="heaimg">
       
       <h2>Nueva tecnología</h2>
 
@@ -50,9 +62,26 @@
         <p>Music Lab actualmente está trabajando en un álbum enteramente en sonido 360° con artistas argentinos y extranjeros como Proyecto Gómez Casa, Lula Bertoldi, Loli Molina, Chancha Vía Circuito, Darío Jalfin, Nahuel Bronzini y Famasloop.</p>
 
         <p>Hoy por hoy trabaja no solo a nivel musical sino a lo que sonido se refiere, innovando en álbumes pero también en instalaciones sonoras en conferencias y presentaciones.</p>
+        
+        <div id="registro">
+          <form action="" class="formulario">
+            <input type="text" class="" placeholder="Ejemplo: Herinyhert">
+            <p>Nombre:</p>
 
+            <input type="text" class="" placeholder="Ejemplo: Martinez">
+            <p>Apellido:</p>
+
+            <input type="number" class="" placeholder="Ejemplo: 11-1234-5678">
+            <p>Numero Telefono:</p>
+
+            <input type="email" class="" placeholder="Ejemplo: heri@gmail.com">
+            <p>Correo Electronico:</p>
+          </form>
+        </div>
+        
         <div class="btn">
-          Registrate
+          <input type="checkbox" id="check">
+          <center>Registrate</center>
         </div>
       </div>
 

@@ -1,0 +1,339 @@
+.btn1 {
+  padding: 15px;
+  height: 50px;
+  font-size: 1.6rem;
+  color: white;
+  background-color: #1D2537;
+  border-radius: 10px;
+}
+.btn1:hover {
+  cursor: pointer;
+  color: #1D2537;
+  background-color: aliceblue;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+h1 {
+  max-width: 800px;
+  width: 100%;
+  margin: 8px;
+  font-size: 3.2rem;
+}
+#nnav {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: aqua;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+.nav {
+  margin: 5px;
+  padding: 5px;
+  display: block,;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .heaimg {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 30px;
+}
+.home .auricular {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .auricular {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .tecnologia {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .ondas {
+    display: none;
+  }
+}
+.home .music-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .music-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .music-images img {
+    width: 100%;
+  }
+}
+.home .musica-nueva {
+  padding: 15px;
+}
+.home .musica-nueva h3 {
+  margin-top: 11px;
+}
+.home .musica-nueva p {
+  margin-top: 13px;
+}
+.home .actual {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .home .actual {
+    flex-direction: column-reverse;
+    padding: 15px;
+    width: 100%;
+  }
+}
+.home .actual .actual-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .actual .actual-text {
+    width: 100%;
+  }
+}
+.home .actual .actual-text h3 {
+  margin-bottom: 10px;
+}
+.home .actual .actual-text p {
+  margin-bottom: 26px;
+}
+.home .actual .actual-text .btn {
+  padding: 15px;
+  height: 50px;
+  font-size: 1.6rem;
+  color: white;
+  background-color: #1D2537;
+  border-radius: 10px;
+}
+.home .actual .actual-text .btn:hover {
+  cursor: pointer;
+  color: #1D2537;
+  background-color: aliceblue;
+}
+.home .actual .actual-text #check {
+  display: none;
+}
+.home .actual .actual-text #check:checked ~ #registro {
+  margin-left: 0;
+}
+.home .actual .actual-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .actual .actual-img {
+    width: 100%;
+  }
+}
+.home .actual .actual-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+#registro {
+  background-color: #1D2537;
+  color: white;
+  padding: 10px;
+  margin-left: -70%;
+  height: 260px;
+  width: 200px;
+  position: absolute;
+  left: 200px;
+  top: 900px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
