@@ -2,6 +2,7 @@ $('#boton').click(()=>{
     let lista = $('#lista')
     lista.empty();//me permite borrar y cargar la lista de neuvo sin que se repitan
     $.get(`http://localhost:5000/amigos`, response => {
+        console.table(response);
         for (let i = 0; i < response.length; i++) {
             let li = `<li>${response[i].name}</li>`;
             lista.append(li);

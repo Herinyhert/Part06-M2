@@ -14,8 +14,7 @@ var traverseDomAndCollectElements = function(matchFunc, startEl) {
   //   resultSet = resultSet.concat(traverseDomAndCollectElements(matchFunc, startEl.children[i]));
   // };
   for (const child of startEl.children){
-    resultSet = resultSet.concat(traverseDomAndCollectElements(matchFunc, child))
-    
+    resultSet = resultSet.concat(traverseDomAndCollectElements(matchFunc, child)) 
   }
   return resultSet;
 };
@@ -41,44 +40,22 @@ var matchFunctionMaker = function(selector) {
   var selectorType = selectorTypeMatcher(selector);
   var matchFunction;
   if (selectorType === "id") { 
-    selector =selector.slice(1)
-    var matchFunction = function (el) {
-      return (el.id === selector)
-    };
+    matchFunction = element => '#'+element.id === selector;
   } else if (selectorType === "class") {
-    matchFunction = function (element) {
-      let clases = element.className.split(' ');
-      var array = [];
-    
-      for(var i = 0; i < clases.length; i++){
-        if('.' + clases[i] === selector){
-          array.push(clases[i])
-        }
-      } 
-      if(array.length > 0){ return true}
-      else {return false}
-      };
-    
-    } else if (selectorType === "tag.class") {
-      selector=selector.split('.')
-      selector= selector[1]
-        matchFunction = function (element) {
-        let clases = element.className.split(' ');
-        var array = [];
-      
-        for(var i = 0; i < clases.length; i++){
-          if(clases[i] === selector){
-            array.push(clases[i])
-          }
-        } 
-        if(array.length > 0){ return true}
-        else {return false}
-        };
-    } else if (selectorType === "tag") {
-    var selector = 'div';
-    var matchFunction = function (el) {
-    return el.tagName && (el.tagName.toLowerCase() === selector.toLowerCase());
-    };
+    matchFunction = element =>{
+      let clases = element.classList;
+      for (let i = 0; i < clases.length; i++) {
+        if('.'+clases[i] === selector) return true;
+      }
+      return false;
+    }
+  } else if (selectorType === "tag.class") {
+     matchFunction = element =>{
+       let [t, c] = selector.split('.');
+       return matchFunctionMaker(t)(element) && matchFunctionMaker('.'+c)(element);
+     } 
+  } else if (selectorType === "tag") {
+    matchFunction = element => element.tagName === selector.toUpperCase();
   }
   return matchFunction;
 };
