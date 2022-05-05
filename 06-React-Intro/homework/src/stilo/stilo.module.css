@@ -1,0 +1,53 @@
+.container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding: 5px;
+    margin: 20px;
+    
+}
+.box {
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.692);
+    
+}
+.box button{
+    float: right;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #ff0000;
+}
+.box h3{
+    color: #030303;
+    text-align: center;
+}
+.conten{
+    column-count: 3;
+    margin-right: 40px;
+    padding: 5px;
+    
+}
+
+img{
+    float: right;
+    margin-top: -20px;
+    margin-right:-20px;
+}
+.boxBig{
+    display: flexbox;
+    justify-content: center;
+}
+        
+.agreg{
+    background-color: #fff;
+    color: #008000;
+    border: 1px solid #008000;
+}
+.agreg:hover{
+    cursor: pointer;
+    background-color: #008000;
+    color: #fff;
+}
+ 

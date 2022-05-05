@@ -1,0 +1,50 @@
+.base{
+    border: 1px solid black;
+    width: 300px;
+    margin-left: 10px;
+}
+.padre{
+    display: flex;
+    justify-content: center;
+    
+}
+.base1{
+    text-align: center;
+    background-color: rgb(243, 239, 247);
+    width: 250px;
+}
+.base1 button{
+    background-color: #ff0000;
+    float: right;
+    margin: 5px;
+    border-radius: 5px;
+}
+.base3{
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+}
+.uno{
+    grid-column: 1 / 2;
+    grid-row: 1;
+    margin-top: 30px;
+}
+.dos{
+    grid-column: 1 / 2;
+    grid-row: 2;
+    margin-top: -30px;
+}
+.tres{
+    grid-column: 2 / 3;
+    grid-row: 1;
+    margin-top: 30px;
+}
+.cuatro{
+    grid-column: 2 / 3;
+    grid-row: 2;
+    margin-top: -30px;
+}
+.cinco{
+    grid-column: 3 / 4;
+    grid-row: 1;
+}
